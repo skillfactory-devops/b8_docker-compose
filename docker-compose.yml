@@ -5,6 +5,8 @@ services:
     build: devops_module10_compose
     volumes:
       - ./devops_module10_compose/www:/var/www
+    healthcheck:
+      test: ["CMD-SHELL", "curl http://nginx | grep '<p>It works!</p>'"]
 
   nginx:
     image: nginx:alpine
