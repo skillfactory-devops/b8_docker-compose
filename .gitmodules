@@ -1,3 +1,6 @@
 [submodule "b7_docker"]
 	path = b7_docker
 	url = https://github.com/skillfactory-devops/b7_docker.git
+[submodule "devops_module10_compose"]
+	path = devops_module10_compose
+	url = https://github.com/SkillfactoryCoding/devops_module10_compose.git

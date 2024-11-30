@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  php:
+    build: devops_module10_compose
+    volumes:
+      - ./devops_module10_compose/www:/var/www
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./devops_module10_compose/www:/var/www
+      - ./devops_module10_compose/nginx:/etc/nginx/conf.d
